@@ -105,12 +105,12 @@ wheels = [
 
 [[package]]
 name = "devkit-container"
-version = "2.1.0"
+version = "2.1.1"
 source = { registry = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+simple" }
-sdist = { url = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+f/4a2/23270c9e5f1d3/devkit_container-2.1.0.tar.gz", hash = "sha256:4a223270c9e5f1d3a14b5cf99d9a350d7ca85385f16a26e5afae5754878b83df" }
+sdist = { url = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+f/a01/83c81612b7ec1/devkit_container-2.1.1.tar.gz", hash = "sha256:a0183c81612b7ec150866197cc742cbcd91405a376225a284c982f19c1081367" }
 wheels = [
-    { url = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+f/df4/605ee9d987df1/devkit_container-2.1.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:df4605ee9d987df18127fd3ba7a3d2ba5a4de05f7d209ab637c74debf66ae871" },
-    { url = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+f/7f2/6670fc49c732b/devkit_container-2.1.0-py3-none-win_amd64.whl", hash = "sha256:7f26670fc49c732b33d0517afadcf1f7f36609aa1078cb95def9b7cb8d645c29" },
+    { url = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+f/2e0/b5c277fc856ea/devkit_container-2.1.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2e0b5c277fc856eab98fb15411846ad6cc86a21a1d09e82a012364d7f0345c2c" },
+    { url = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+f/d17/0cf7c7c683dea/devkit_container-2.1.1-py3-none-win_amd64.whl", hash = "sha256:d170cf7c7c683dea7889e28c32fbfade6b4006835d10a12573f286bd26795b88" },
 ]
 
 [[package]]
@@ -354,7 +354,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "devkit-container", specifier = ">=2.1.0", index = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+simple" }]
+requires-dist = [{ name = "devkit-container", specifier = ">=2.1.1", index = "https://pypi.sweetfiretobacco.com/jacob.ogden/internal/+simple" }]
 
 [package.metadata.requires-dev]
 dev = [

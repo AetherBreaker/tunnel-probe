@@ -4,7 +4,7 @@
   description     = "The test spoke of the WireGuard tunnel: proves fetched mode, enrolment and the handshake end to end"
   readme          = "README.md"
   requires-python = ">=3.14"
-  dependencies    = ["devkit-container>=2.1.0"]                                                                            # setup-project added: "devkit-container"
+  dependencies    = ["devkit-container>=2.1.1"]                                                                            # setup-project added: "devkit-container"
 
   [project.scripts]
     run-app-tunnel-probe = "tunnel_probe.__main__:run_app"
