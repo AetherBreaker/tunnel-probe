@@ -1,6 +1,17 @@
-"""The app `run-app-tunnel-probe`: in this phase it only heartbeats (hub design 10.1)."""
+"""The app `run-app-tunnel-probe`: a placeholder that exits 0 (hub design 10.1).
+
+The container is a one-shot sandbox: the entrypoint brings the tunnel up, runs this once and
+exits with its code. Replace the body by hand with the smoke test to run over the tunnel.
+"""
+
+# Standard library imports
+import sys
 
 
 def run_app() -> None:
-  """Stub until the step 4 plan."""
-  raise NotImplementedError("run-app-tunnel-probe: implemented by the step 4 plan")
+  """Print one line and return; the entrypoint exits 0 after it."""
+  print("tunnel-probe: the tunnel is up and the sandbox ran; nothing to probe yet", file=sys.stderr)
+
+
+if __name__ == "__main__":
+  run_app()
