@@ -228,3 +228,4 @@ __marimo__/
 *.env
 persisted_data/
 *.key
+sql_login.json
