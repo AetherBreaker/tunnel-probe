@@ -73,6 +73,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends wireguard-tools
 
 # Project additions to the final stage; setup-project renders the template around this window.
 # !window final:
+# Microsoft ODBC Driver 18 for SQL Server, which pyodbc loads (it brings unixodbc). ACCEPT_EULA
+# accepts Microsoft's licence for the driver; the repository package sets up its apt source and key.
+RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates \
+  && curl -fsSL -o /tmp/packages-microsoft-prod.deb https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb \
+  && dpkg -i /tmp/packages-microsoft-prod.deb && rm /tmp/packages-microsoft-prod.deb \
+  && apt-get update && ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18 \
+  && rm -rf /var/lib/apt/lists/*
 # !end final
 
 WORKDIR /app
